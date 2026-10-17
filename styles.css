@@ -14,6 +14,11 @@ h3 {
     font-family: courier;
 }
 
+h4 {
+    font-family: courier;
+    font-size: 10pt;
+}
+
 p {
     font-size: 14pt;
     font-family: times;
@@ -41,7 +46,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 25%;
     height: 100%;
     background-color: #343499;
 }
@@ -49,12 +54,13 @@ img {
 #pfp {
     display: flex;
     justify-content: center;
+    padding-top: 3vh;
 }
 
 #main {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     height: 100%;
 }
 
@@ -80,4 +86,29 @@ img {
     width: 95%;
     height: 80%;
     padding: 1vw;
+}
+
+@media screen and (max-width: 1000px) {
+    #layout {
+	flex-direction: column;
+	overflow: scroll;
+    }
+
+    #side, #main {
+	align-items: center;
+	width: 100%;
+    }
+
+    #top, #middle {
+	height: auto;
+    }
+
+    #bottom {
+	height: auto;
+	padding-right: 2vh;
+    }
+
+    #pfp {
+	width: 50%;
+    }
 }
