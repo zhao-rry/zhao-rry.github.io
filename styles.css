@@ -25,11 +25,6 @@ p {
     font-family: times;
 }
 
-img {
-    width: 60%;
-    border: 0.5rem solid #fff;
-}
-
 .side-text {
     margin: 1rem;
     text-align: center;
@@ -52,10 +47,21 @@ img {
     background-color: #343499;
 }
 
-#pfp {
+#bear {
     display: flex;
     justify-content: center;
     padding-top: 3vh;
+}
+
+#pfp {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+#img-me {
+    width: 60%;
+    border: 0.5rem solid #fff;
 }
 
 #main {
@@ -109,6 +115,7 @@ img {
     #bottom {
 	height: auto;
 	padding-right: 2vh;
+	padding-bottom: 5vh;
 	overflow: visible;
     }
 
